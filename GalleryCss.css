@@ -1,6 +1,6 @@
 *{
 
-    font-family: 'Metrophobic'
+    font-family: 'Metrophobic',sans-serif;
 } 
 .title
 {
@@ -33,7 +33,7 @@
 .navbar ul li
 {
     display:inline-block;
-    margin: 0 18px;
+    margin: 0 17px;
     position: relative;
 }
 .navbar ul li button
