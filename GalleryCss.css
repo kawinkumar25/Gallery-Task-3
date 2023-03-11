@@ -1,0 +1,159 @@
+*{
+
+    font-family: 'Metrophobic',sans-serif;
+} 
+.title
+{
+    text-align: center;
+    text-shadow:#ff0000;
+    color: white;
+    padding: 1%;
+}
+
+.container
+{
+    background-color: #ff0000;
+    margin-bottom: 20px;
+}
+.navbar
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 20px; */
+    
+}
+
+.logo{
+    cursor: pointer;
+    font-size:  150%;
+    color:white;
+    grid-column: span 1;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+.navbar ul{
+    grid-column: span 1;
+    text-align: center;
+}
+.navbar ul li
+{
+    display:inline-block;
+    background-color: black;
+    border-radius: 10px;
+    padding: 1%;
+    
+}
+.navbar ul li button
+{
+    text-align: center;
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ff0000  ;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: black;
+    position:absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.4s;  
+}
+.navbar ul li:hover::after{
+    width:100%
+ 
+}
+
+.backImages
+{
+    margin-top: 0px;
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url("gymBG.jpg") no-repeat; */
+    background-color: black;
+    /* background-size: cover; */
+}
+
+.girdView
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    color: #ff0000;
+    
+    
+    
+    
+}
+.girdView img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.girdView p{
+    text-align:center;
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+}
+.overLays{
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto; */
+    
+
+    position: fixed;
+    height: 110vh;
+    margin-top: -87%;
+    display: none;
+    width: 100%;
+
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .overLays img{
+    
+    margin: 15% 25%;
+    height: 50%;
+    width: 50%;
+}
+.exit
+{
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    margin: -41% 77%;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+.footer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    text-align: left;
+    background-color: black;
+    padding: 1%;
+    color: white;
+    text-decoration: none;  
+}
+
+.footer a{
+    color: white;
+}
